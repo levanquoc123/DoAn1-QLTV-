@@ -49,8 +49,37 @@ namespace quản_lý_thư_viện
                 }
             }
         }
+               
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.label11.Hide();
+            this.xuathienten.Hide();
+            this.chứcNăngToolStripMenuItem.Enabled = false;
+        }
 
-        //thoát
+        private void liênHệToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            yeucauht ycht = new yeucauht();
+            ycht.ShowDialog();
+
+        }
+        
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chỉnhSửaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            chinhsuathongtinnguoidung cs = new chinhsuathongtinnguoidung();
+            cs.ShowDialog();
+        }
+
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (tinhtrang == true)
@@ -77,53 +106,19 @@ namespace quản_lý_thư_viện
             }
         }
 
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            this.label11.Hide();
-            this.xuathienten.Hide();
-            this.chứcNăngToolStripMenuItem.Enabled = false;
-        }
-
-        //hiển thị form admin
         private void adminToolStripMenuItem_Click(object sender, EventArgs e)
         {
             admin ad = new admin();
             this.Hide();
             ad.ShowDialog();
         }
-        //hiển thị form user
-       
-        //hiển thị form yeucau
-        private void liênHệToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            yeucauht ycht = new yeucauht();
-            ycht.ShowDialog();
-
-        }
-        //hiển thị form chỉnh sửa user
-        private void chỉnhSửaThôngTinUserToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            chinhsuathongtinnguoidung cs = new chinhsuathongtinnguoidung();
-            cs.ShowDialog();
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void userToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //muonsach ms = new muonsach();
-            //ms.ShowDialog();
             muonsach cms = new muonsach();
             cms.ShowDialog();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
