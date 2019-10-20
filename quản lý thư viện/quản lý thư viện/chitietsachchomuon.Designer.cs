@@ -233,6 +233,7 @@
             this.hienthimadocgia.Size = new System.Drawing.Size(130, 23);
             this.hienthimadocgia.TabIndex = 35;
             this.hienthimadocgia.UseVisualStyleBackColor = true;
+            this.hienthimadocgia.Click += new System.EventHandler(this.hienthimadocgia_Click);
             // 
             // label1
             // 

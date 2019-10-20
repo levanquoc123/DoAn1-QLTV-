@@ -81,13 +81,11 @@
             this.label9 = new System.Windows.Forms.Label();
             this.laymnxb = new System.Windows.Forms.TextBox();
             this.laytloai = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.ngayhethong = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.muonsachTableAdapter = new quản_lý_thư_viện.DataSet1TableAdapters.muonsachTableAdapter();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.timkiem = new System.Windows.Forms.Button();
@@ -255,9 +253,9 @@
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.laymnxb);
             this.panel2.Controls.Add(this.laytloai);
-            this.panel2.Location = new System.Drawing.Point(25, 339);
+            this.panel2.Location = new System.Drawing.Point(78, 496);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 10);
+            this.panel2.Size = new System.Drawing.Size(10, 11);
             this.panel2.TabIndex = 87;
             // 
             // layvtri
@@ -304,7 +302,7 @@
             this.panel1.Controls.Add(this.label9);
             this.panel1.Location = new System.Drawing.Point(249, 17);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(10, 16);
+            this.panel1.Size = new System.Drawing.Size(557, 141);
             this.panel1.TabIndex = 59;
             // 
             // dataGridView4
@@ -313,9 +311,9 @@
             this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column17,
             this.Column18});
-            this.dataGridView4.Location = new System.Drawing.Point(143, 60);
+            this.dataGridView4.Location = new System.Drawing.Point(173, 51);
             this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(195, 56);
+            this.dataGridView4.Size = new System.Drawing.Size(165, 72);
             this.dataGridView4.TabIndex = 20;
             // 
             // Column17
@@ -423,9 +421,9 @@
             this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column15,
             this.Column16});
-            this.dataGridView3.Location = new System.Drawing.Point(338, 61);
+            this.dataGridView3.Location = new System.Drawing.Point(344, 51);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(224, 55);
+            this.dataGridView3.Size = new System.Drawing.Size(224, 72);
             this.dataGridView3.TabIndex = 25;
             // 
             // Column15
@@ -566,16 +564,6 @@
             this.laytloai.Size = new System.Drawing.Size(100, 20);
             this.laytloai.TabIndex = 65;
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(389, 310);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 80;
-            this.button3.Text = "Reload";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(59, 310);
@@ -617,24 +605,13 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(802, 33);
+            this.button5.Location = new System.Drawing.Point(772, 42);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(112, 32);
             this.button5.TabIndex = 86;
             this.button5.Text = "Quay Lại";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click_1);
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(684, 33);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(112, 32);
-            this.button4.TabIndex = 85;
-            this.button4.Text = "In Hóa Đơn";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // muonsachTableAdapter
             // 
@@ -879,15 +856,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(989, 382);
+            this.ClientSize = new System.Drawing.Size(989, 341);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.ngayhethong);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.timkiem);
             this.Controls.Add(this.comboBox1);
@@ -972,13 +947,11 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox laymnxb;
         private System.Windows.Forms.TextBox laytloai;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DateTimePicker ngayhethong;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
         private DataSet1TableAdapters.muonsachTableAdapter muonsachTableAdapter;
         public System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button timkiem;

@@ -66,6 +66,7 @@
             this.button1.TabIndex = 46;
             this.button1.Text = "Tìm Kiếm";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5
             // 
@@ -86,6 +87,7 @@
             this.sua.TabIndex = 43;
             this.sua.Text = "Sửa";
             this.sua.UseVisualStyleBackColor = true;
+            this.sua.Click += new System.EventHandler(this.sua_Click);
             // 
             // quaylai
             // 
@@ -96,6 +98,7 @@
             this.quaylai.TabIndex = 42;
             this.quaylai.Text = "Quay Lại";
             this.quaylai.UseVisualStyleBackColor = true;
+            this.quaylai.Click += new System.EventHandler(this.quaylai_Click);
             // 
             // xoa
             // 
@@ -106,6 +109,7 @@
             this.xoa.TabIndex = 41;
             this.xoa.Text = "Xóa";
             this.xoa.UseVisualStyleBackColor = true;
+            this.xoa.Click += new System.EventHandler(this.xoa_Click);
             // 
             // them
             // 
@@ -116,6 +120,7 @@
             this.them.TabIndex = 40;
             this.them.Text = "Thêm";
             this.them.UseVisualStyleBackColor = true;
+            this.them.Click += new System.EventHandler(this.them_Click);
             // 
             // reload
             // 
@@ -126,6 +131,7 @@
             this.reload.TabIndex = 39;
             this.reload.Text = "RELOAD";
             this.reload.UseVisualStyleBackColor = true;
+            this.reload.Click += new System.EventHandler(this.reload_Click);
             // 
             // Column3
             // 
@@ -190,6 +196,7 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "Lưu";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // mk
             // 

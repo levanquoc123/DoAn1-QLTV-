@@ -40,10 +40,12 @@ namespace quản_lý_thư_viện
             qlad.ShowDialog();
         }
 
-        private void thôngBáoToolStripMenuItem_Click_1(object sender, EventArgs e)
+        private void thôngBáoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             hotro ht = new hotro();
             ht.ShowDialog();
         }
+
+        
     }
 }

@@ -12,7 +12,7 @@ namespace quản_lý_thư_viện
 {
     public partial class Form1 : Form
     {
-        public static bool tinhtrang = false;//Biến tĩnh ghi nhận tình trạng đăng nhập 
+        public static bool tinhtrang = false;
         string nduser = "user";
         string ndadmin = "admin";
         public Form1()
@@ -20,7 +20,6 @@ namespace quản_lý_thư_viện
             InitializeComponent();
         }
 
-        //mở form đăng nhập
         private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.xuathienten.ResetText();
@@ -31,55 +30,41 @@ namespace quản_lý_thư_viện
                 this.label11.Show();
                 this.xuathienten.Show();
                 this.đăngNhậpToolStripMenuItem.Enabled = false;
-                xuathienten.Text = dangnhap.tenhienthi;
-                this.chứcNăngToolStripMenuItem.Enabled = true;
+                label5.Text = dangnhap.tenhienthi;
+                this.chứcNăngToolStripMenuItem1.Enabled = true;
                 if (nduser == dangnhap.quyendangnhap)
                 {
                     this.liênHệToolStripMenuItem.Enabled = true;
-                    this.adminToolStripMenuItem.Enabled = false;
-                    this.userToolStripMenuItem.Enabled = true;
-                    this.chỉnhSửaThôngTinUserToolStripMenuItem.Enabled = true;
+                    this.adminToolStripMenuItem1.Visible = false;
+                    this.userToolStripMenuItem1.Enabled = true;
+                    this.chỉnhSửaToolStripMenuItem.Visible = true;
                 }
                 else if (ndadmin == dangnhap.quyendangnhap)
                 {
-                    this.liênHệToolStripMenuItem.Enabled = false;
-                    this.userToolStripMenuItem.Enabled = false;
-                    this.adminToolStripMenuItem.Enabled = true;
-                    this.chỉnhSửaThôngTinUserToolStripMenuItem.Enabled = false;
+                    this.hỗTrợToolStripMenuItem.Enabled = false;
+                    this.userToolStripMenuItem1.Visible = false;
+                    this.adminToolStripMenuItem1.Visible = true;
+                    this.chỉnhSửaToolStripMenuItem.Visible = false;
                 }
             }
-        }
-               
+        }     
         private void Form1_Load(object sender, EventArgs e)
         {
             this.label11.Hide();
             this.xuathienten.Hide();
-            this.chứcNăngToolStripMenuItem.Enabled = false;
+            this.chứcNăngToolStripMenuItem1.Enabled = false;
         }
-
-        private void liênHệToolStripMenuItem_Click(object sender, EventArgs e)
+        private void liToolStripMenuItem_Click(object sender, EventArgs e)
         {
             yeucauht ycht = new yeucauht();
             ycht.ShowDialog();
 
-        }
-        
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        }      
         private void chỉnhSửaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             chinhsuathongtinnguoidung cs = new chinhsuathongtinnguoidung();
             cs.ShowDialog();
         }
-
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (tinhtrang == true)
@@ -93,7 +78,7 @@ namespace quản_lý_thư_viện
                     this.xuathienten.ResetText();
                     this.label11.Hide();
                     this.xuathienten.Hide();
-                    this.chứcNăngToolStripMenuItem.Enabled = false;
+                    this.chứcNăngToolStripMenuItem1.Enabled = false;
                 }
                 tinhtrang = false;
             }
@@ -105,20 +90,21 @@ namespace quản_lý_thư_viện
                     Application.Exit();
             }
         }
-
-        private void adminToolStripMenuItem_Click(object sender, EventArgs e)
+        private void adminToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             admin ad = new admin();
             this.Hide();
             ad.ShowDialog();
         }
-
         private void userToolStripMenuItem_Click(object sender, EventArgs e)
         {
             muonsach cms = new muonsach();
             cms.ShowDialog();
         }
 
-        
+        private void label5_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

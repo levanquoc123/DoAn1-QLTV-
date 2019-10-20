@@ -20,9 +20,6 @@ namespace quản_lý_thư_viện
         {
             InitializeComponent();
         }
-
-
-        //hiển thị mật khẩu
         private void xemmatkhau_CheckedChanged(object sender, EventArgs e)
         {
             if (xemmatkhau.Checked == true)
@@ -32,21 +29,14 @@ namespace quản_lý_thư_viện
             else
                 matkhau.UseSystemPasswordChar = false;
         }
-
-        //thoát
         private void thoat_Click(object sender, EventArgs e)
         {
 
             DialogResult traloi;
             traloi = MessageBox.Show("Bạn Thực Sự Muốn Thoát?", "EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (traloi == DialogResult.Yes)
-                //Application.Exit();
                 this.Close();
         }
-
-        //kiểm tra tài khoản khi đăng nhập
-      
-        //tạo tài khoản mới
         private void taotaikhoan_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -54,17 +44,10 @@ namespace quản_lý_thư_viện
             taotk.ShowDialog();
             this.Show();
         }
-
         private void dangnhap_Load(object sender, EventArgs e)
         {
-
+           
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void dangnhapnd_Click(object sender, EventArgs e)
         {
             BLkiemtratk kttk = new BLkiemtratk();
@@ -80,12 +63,13 @@ namespace quản_lý_thư_viện
                     tenhienthi = taikhoan.Text;
                     quyendangnhap = comboBox1.Text;
                     Form1.tinhtrang = true;
+                    
                     Close();
                 }
                 else
                     MessageBox.Show("Tên tài khoản hoặc mật khẩu bị sai!!!", "TRẠNG THÁI ĐĂNG NHẬP", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 MessageBox.Show("Lỗi kết nối");
             }

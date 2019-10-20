@@ -40,7 +40,7 @@ namespace quản_lý_thư_viện
             LoadData4();
             matudong.Text = tangmatudong();
             LoadData5();
-            this.reportViewer1.Hide();
+         //   this.reportViewer1.Hide();
         }
         public void LoadData1()
         {
@@ -51,10 +51,10 @@ namespace quản_lý_thư_viện
                 dtdocgia.Clear();
                 //DataSet ds1 = dbQLTG.LayTacGia();
                 DataSet ds1 = blDG.LayDocGiatheotendangnhap(hienthitendangnhap.Text);
-                dtdocgia = ds1.Tables[0];
+               dtdocgia = ds1.Tables[0];
                 // Đưa dữ liệu lên DataGridView       
                 dataGridView4.DataSource = dtdocgia;
-                laymadocgia.Text = this.dataGridView4.CurrentRow.Cells[0].Value.ToString();
+               // laymadocgia.Text = this.dataGridView4.CurrentRow.Cells[0].Value.ToString();
 
 
             }
@@ -349,5 +349,7 @@ namespace quản_lý_thư_viện
         {
 
         }
+
+        
     }
 }

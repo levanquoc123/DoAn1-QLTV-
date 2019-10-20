@@ -31,7 +31,6 @@ namespace quản_lý_thư_viện
             textBox2.Text = this.dataGridView1.CurrentRow.Cells[1].Value.ToString();
             tenht = textBox2.Text;
         }
-
         public void LoadData2()
         {
             try
@@ -55,8 +54,6 @@ namespace quản_lý_thư_viện
                 MessageBox.Show("Không lấy được nội dung trong table NguoiDung. Lỗi rồi!!!");
             }
         }
-
-        //lấy dữ liệu muonsach của từng user theo madocgia
         public void LoadData3()
         {
             try
@@ -83,14 +80,12 @@ namespace quản_lý_thư_viện
         }
         int tongtien;
         string dg = "VNĐ";
-        //tính tiền nếu sách trả quá hạn
         public void tinhtien()
         {
             int k = Convert.ToInt32(hienthitienno.Text);
             tongtien = k * 1000;
             tienno.Text = Convert.ToString(tongtien) + dg;
         }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             chaychu.Location = new Point(chaychu.Location.X + 1, chaychu.Location.Y);
@@ -99,7 +94,6 @@ namespace quản_lý_thư_viện
                 chaychu.Location = new Point(chaychu.Location.X - this.Width, chaychu.Location.Y);
             }
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             DialogResult traloi;
@@ -108,13 +102,17 @@ namespace quản_lý_thư_viện
                 //Application.Exit();
                 this.Close();
         }
-
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int r = dataGridView1.CurrentCell.RowIndex;
             // Chuyển thông tin lên panel         
             hienthitienno.Text = dataGridView1.Rows[r].Cells[8].Value.ToString();
             tinhtien(); 
+        }
+
+        private void hienthimadocgia_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

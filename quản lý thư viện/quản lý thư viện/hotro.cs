@@ -65,7 +65,7 @@ namespace quản_lý_thư_viện
         private void button2_Click(object sender, EventArgs e)
         {
             DialogResult traloi;
-            traloi = MessageBox.Show("Bạn Thực Sự Muốn Thoát?", "EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            traloi = MessageBox.Show("Bạn Thực Sự Muốn Quay Lại!", "EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (traloi == DialogResult.Yes)
                 //Application.Exit();
                 this.Close();
@@ -88,7 +88,7 @@ namespace quản_lý_thư_viện
                 // Khai báo biến traloi                 
                 DialogResult traloi;
                 // Hiện hộp thoại hỏi đáp              
-                traloi = MessageBox.Show("Chắc xóa mẫu tin này không?", "Trả lời", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                traloi = MessageBox.Show("Chắc xóa tin này không?", "Trả lời", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 // Kiểm tra có nhắp chọn nút Ok không?      
                 if (traloi == DialogResult.Yes)
                 {
@@ -98,12 +98,12 @@ namespace quản_lý_thư_viện
                     // Cập nhật lại DataGridView        
                     Loaddata();
                     // Thông báo                    
-                    MessageBox.Show("Đã gửi xong!");
+                    MessageBox.Show("Đã xóa xong!");
                 }
                 else
                 {
                     // Thông báo         
-                    MessageBox.Show("Không thực hiện việc xóa mẫu tin!");
+                    MessageBox.Show("Không thực hiện việc xóa tin!");
                 }
             }
             catch (SqlException)

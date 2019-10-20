@@ -74,7 +74,6 @@
             this.matkhau.PasswordChar = '*';
             this.matkhau.Size = new System.Drawing.Size(160, 25);
             this.matkhau.TabIndex = 24;
-            this.matkhau.Text = "1";
             // 
             // thoat
             // 
@@ -88,6 +87,7 @@
             this.thoat.TabIndex = 23;
             this.thoat.Text = "Thoát";
             this.thoat.UseVisualStyleBackColor = false;
+            this.thoat.Click += new System.EventHandler(this.thoat_Click);
             // 
             // dangnhapnd
             // 
@@ -115,6 +115,7 @@
             this.taotaikhoan.TabIndex = 21;
             this.taotaikhoan.Text = "Tạo Tài Khoản";
             this.taotaikhoan.UseVisualStyleBackColor = false;
+            this.taotaikhoan.Click += new System.EventHandler(this.taotaikhoan_Click);
             // 
             // xemmatkhau
             // 
@@ -127,6 +128,7 @@
             this.xemmatkhau.TabIndex = 20;
             this.xemmatkhau.Text = "&Xem Mật Khẩu";
             this.xemmatkhau.UseVisualStyleBackColor = false;
+            this.xemmatkhau.CheckedChanged += new System.EventHandler(this.xemmatkhau_CheckedChanged);
             // 
             // taikhoan
             // 
@@ -136,7 +138,6 @@
             this.taikhoan.Name = "taikhoan";
             this.taikhoan.Size = new System.Drawing.Size(160, 47);
             this.taikhoan.TabIndex = 19;
-            this.taikhoan.Text = "admin1";
             // 
             // pictureBox2
             // 
@@ -162,7 +163,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Highlight;
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.BackgroundImage = global::quản_lý_thư_viện.Properties.Resources.Untitled4;
             this.ClientSize = new System.Drawing.Size(582, 349);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);

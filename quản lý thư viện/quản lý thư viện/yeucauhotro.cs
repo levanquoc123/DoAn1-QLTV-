@@ -54,6 +54,7 @@ namespace quản_lý_thư_viện
             Loaddata();
             // Thông báo            
             MessageBox.Show("Gửi thành công!");
+
         }
 
         //tăng mã tự động
