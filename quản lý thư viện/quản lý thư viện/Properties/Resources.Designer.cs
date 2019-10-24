@@ -63,9 +63,49 @@ namespace quản_lý_thư_viện.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _095109loại_hình_thư_viện {
+            get {
+                object obj = ResourceManager.GetObject("095109loại hình thư viện", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _5 {
             get {
                 object obj = ResourceManager.GetObject("5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hình_thư_viện {
+            get {
+                object obj = ResourceManager.GetObject("hình thư viện", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hình_thư_viện1 {
+            get {
+                object obj = ResourceManager.GetObject("hình thư viện1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hình_thư_viện2 {
+            get {
+                object obj = ResourceManager.GetObject("hình thư viện2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -246,6 +246,9 @@
     <None Include="Hinh_anh\Untitled3.png" />
     <None Include="Hinh_anh\Untitled4.png" />
     <None Include="Hinh_anh\5.PNG" />
+    <None Include="Hinh_anh\095109loại hình thư viện.png" />
+    <None Include="Hinh_anh\thư viện.png" />
+    <None Include="Hinh_anh\hình thư viện.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -38,16 +38,17 @@
             this.taikhoan = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(134, 200);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(79, 200);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 24);
+            this.label1.Size = new System.Drawing.Size(146, 26);
             this.label1.TabIndex = 26;
             this.label1.Text = "Chọn quyền:";
             // 
@@ -58,7 +59,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "user",
             "admin"});
-            this.comboBox1.Location = new System.Drawing.Point(270, 200);
+            this.comboBox1.Location = new System.Drawing.Point(286, 200);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(96, 24);
             this.comboBox1.TabIndex = 25;
@@ -66,7 +67,7 @@
             // matkhau
             // 
             this.matkhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.matkhau.Location = new System.Drawing.Point(206, 156);
+            this.matkhau.Location = new System.Drawing.Point(222, 156);
             this.matkhau.Multiline = true;
             this.matkhau.Name = "matkhau";
             this.matkhau.PasswordChar = '*';
@@ -79,7 +80,7 @@
             this.thoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.thoat.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.thoat.Location = new System.Drawing.Point(391, 231);
+            this.thoat.Location = new System.Drawing.Point(430, 256);
             this.thoat.Name = "thoat";
             this.thoat.Size = new System.Drawing.Size(87, 34);
             this.thoat.TabIndex = 23;
@@ -93,7 +94,7 @@
             this.dangnhapnd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dangnhapnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dangnhapnd.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.dangnhapnd.Location = new System.Drawing.Point(223, 231);
+            this.dangnhapnd.Location = new System.Drawing.Point(239, 256);
             this.dangnhapnd.Name = "dangnhapnd";
             this.dangnhapnd.Size = new System.Drawing.Size(143, 34);
             this.dangnhapnd.TabIndex = 22;
@@ -107,7 +108,7 @@
             this.taotaikhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.taotaikhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.taotaikhoan.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.taotaikhoan.Location = new System.Drawing.Point(40, 231);
+            this.taotaikhoan.Location = new System.Drawing.Point(30, 256);
             this.taotaikhoan.Name = "taotaikhoan";
             this.taotaikhoan.Size = new System.Drawing.Size(177, 34);
             this.taotaikhoan.TabIndex = 21;
@@ -131,7 +132,7 @@
             // taikhoan
             // 
             this.taikhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.taikhoan.Location = new System.Drawing.Point(206, 109);
+            this.taikhoan.Location = new System.Drawing.Point(222, 109);
             this.taikhoan.Multiline = true;
             this.taikhoan.Name = "taikhoan";
             this.taikhoan.Size = new System.Drawing.Size(160, 29);
@@ -144,9 +145,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label2.Location = new System.Drawing.Point(78, 108);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 26);
+            this.label2.Size = new System.Drawing.Size(126, 26);
             this.label2.TabIndex = 27;
-            this.label2.Text = "Tài Khoản";
+            this.label2.Text = "Tài Khoản:";
             // 
             // label3
             // 
@@ -154,9 +155,20 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(78, 155);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 26);
+            this.label3.Size = new System.Drawing.Size(120, 26);
             this.label3.TabIndex = 28;
-            this.label3.Text = "Mật Khẩu";
+            this.label3.Text = "Mật Khẩu:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label4.Location = new System.Drawing.Point(205, 39);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(160, 31);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "Đăng Nhập";
             // 
             // dangnhap
             // 
@@ -164,6 +176,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(619, 360);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -194,5 +207,6 @@
         private System.Windows.Forms.TextBox taikhoan;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
