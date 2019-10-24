@@ -36,10 +36,8 @@
             this.taotaikhoan = new System.Windows.Forms.Button();
             this.xemmatkhau = new System.Windows.Forms.CheckBox();
             this.taikhoan = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -133,41 +131,41 @@
             // taikhoan
             // 
             this.taikhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.taikhoan.Location = new System.Drawing.Point(206, 91);
+            this.taikhoan.Location = new System.Drawing.Point(206, 109);
             this.taikhoan.Multiline = true;
             this.taikhoan.Name = "taikhoan";
-            this.taikhoan.Size = new System.Drawing.Size(160, 47);
+            this.taikhoan.Size = new System.Drawing.Size(160, 29);
             this.taikhoan.TabIndex = 19;
             // 
-            // pictureBox2
+            // label2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::quản_lý_thư_viện.Properties.Resources.Untitled3;
-            this.pictureBox2.Location = new System.Drawing.Point(128, 156);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(56, 32);
-            this.pictureBox2.TabIndex = 27;
-            this.pictureBox2.TabStop = false;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Location = new System.Drawing.Point(78, 108);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(119, 26);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Tài Khoản";
             // 
-            // pictureBox1
+            // label3
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::quản_lý_thư_viện.Properties.Resources.Untitled1;
-            this.pictureBox1.Location = new System.Drawing.Point(128, 91);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(56, 47);
-            this.pictureBox1.TabIndex = 28;
-            this.pictureBox1.TabStop = false;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(78, 155);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(113, 26);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Mật Khẩu";
             // 
             // dangnhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Window;
-            this.BackgroundImage = global::quản_lý_thư_viện.Properties.Resources.Untitled4;
-            this.ClientSize = new System.Drawing.Size(582, 349);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox2);
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.ClientSize = new System.Drawing.Size(619, 360);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.matkhau);
@@ -179,8 +177,6 @@
             this.Name = "dangnhap";
             this.Text = "dangnhap";
             this.Load += new System.EventHandler(this.dangnhap_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,7 +192,7 @@
         private System.Windows.Forms.Button taotaikhoan;
         private System.Windows.Forms.CheckBox xemmatkhau;
         private System.Windows.Forms.TextBox taikhoan;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

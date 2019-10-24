@@ -74,5 +74,10 @@ namespace quản_lý_thư_viện
                 MessageBox.Show("Lỗi kết nối");
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
