@@ -51,8 +51,8 @@ namespace quản_lý_thư_viện
         private void dangnhapnd_Click(object sender, EventArgs e)
         {
             BLkiemtratk kttk = new BLkiemtratk();
-            try
-            {
+            //try
+            //{
 
                 string tk = taikhoan.Text;
                 string mk = matkhau.Text;
@@ -68,11 +68,11 @@ namespace quản_lý_thư_viện
                 }
                 else
                     MessageBox.Show("Tên tài khoản hoặc mật khẩu bị sai!!!", "TRẠNG THÁI ĐĂNG NHẬP", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception )
-            {
-                MessageBox.Show("Lỗi kết nối");
-            }
+           // }
+            //catch (Exception )
+            //{
+            //    MessageBox.Show("Lỗi kết nối");
+            //}
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

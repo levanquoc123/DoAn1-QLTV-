@@ -363,14 +363,14 @@
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(134, 22);
             this.toolStripMenuItem2.Text = "Đăng Nhập";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.đăngNhậpToolStripMenuItem_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(134, 22);
             this.toolStripMenuItem3.Text = "Thoát";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
@@ -385,7 +385,7 @@
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(114, 22);
             this.toolStripMenuItem5.Text = "Liên Hệ";
             this.toolStripMenuItem5.Click += new System.EventHandler(this.liToolStripMenuItem_Click);
             // 

@@ -331,7 +331,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(921, 331);
+            this.ClientSize = new System.Drawing.Size(921, 347);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.huy);
             this.Controls.Add(this.quaylai);
@@ -340,6 +340,7 @@
             this.Controls.Add(this.chaychu);
             this.Name = "themsach";
             this.Text = "themsach";
+            this.Load += new System.EventHandler(this.themsach_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);

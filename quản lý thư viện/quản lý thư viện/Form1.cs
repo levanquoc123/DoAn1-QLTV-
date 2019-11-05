@@ -38,6 +38,8 @@ namespace quản_lý_thư_viện
                     this.adminToolStripMenuItem1.Visible = false;
                     this.userToolStripMenuItem1.Enabled = true;
                     this.chỉnhSửaToolStripMenuItem.Visible = true;
+                    this.toolStripMenuItem6.Enabled = true;
+                    this.toolStripMenuItem7.Enabled = false;
                 }
                 else if (ndadmin == dangnhap.quyendangnhap)
                 {
@@ -45,6 +47,9 @@ namespace quản_lý_thư_viện
                     this.userToolStripMenuItem1.Visible = false;
                     this.adminToolStripMenuItem1.Visible = true;
                     this.chỉnhSửaToolStripMenuItem.Visible = false;
+                    this.toolStripMenuItem6.Enabled = true;
+                    this.toolStripMenuItem8.Enabled = false;
+                    this.toolStripMenuItem9.Enabled = false;
                 }
             }
         }     
@@ -52,6 +57,7 @@ namespace quản_lý_thư_viện
         {
             this.label11.Hide();
             this.xuathienten.Hide();
+            this.toolStripMenuItem6.Enabled = false;
             this.chứcNăngToolStripMenuItem1.Enabled = false;
         }
         private void liToolStripMenuItem_Click(object sender, EventArgs e)

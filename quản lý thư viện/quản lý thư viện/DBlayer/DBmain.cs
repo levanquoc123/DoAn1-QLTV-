@@ -9,7 +9,7 @@ namespace quản_lý_thư_viện.DBlayer
 {
     class DBmain
     {
-        string ConnStr = "Data Source=QUOC;Initial Catalog=quanlythuvien1;Integrated Security=True";
+        string ConnStr = "Data Source=QUOC\\QUOC;Initial Catalog=quanlythuvien1;Integrated Security=True";
         SqlConnection conn = null;
         SqlCommand comm = null;
         SqlDataAdapter da = null;

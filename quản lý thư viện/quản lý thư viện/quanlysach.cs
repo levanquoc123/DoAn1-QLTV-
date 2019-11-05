@@ -15,7 +15,7 @@ namespace quản_lý_thư_viện
     public partial class quanlysach : Form
     {
         DataTable dtquanlysach = null;         // Khai báo biến kiểm tra việc Thêm hay Sửa dữ liệu  
-        bool Them;
+        
         string err;
         BLquanlysach dbQLS = new BLquanlysach();
         BLnxb dbQLNXB = new BLnxb();

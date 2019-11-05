@@ -15,7 +15,6 @@ namespace quản_lý_thư_viện
     public partial class quanlyuser : Form
     {
         DataTable dtqluser = null;         // Khai báo biến kiểm tra việc Thêm hay Sửa dữ liệu  
-        bool Them;
         bool Sua;
         string err;
         BLtaotaikhoanuser BLQLUser = new BLtaotaikhoanuser();

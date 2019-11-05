@@ -48,6 +48,7 @@ namespace quản_lý_thư_viện
                 qlsach.Clear();
                 DataSet ds = dbQLS.LaySach();
                 qlsach = ds.Tables[0];
+               
                 // Đưa dữ liệu lên DataGridView       
                 themmasach.Text = tangmatudong();
                 // Thay đổi độ rộng cột    
@@ -135,7 +136,6 @@ namespace quản_lý_thư_viện
             return ma;
         }
 
-
-
+      
     }
 }
