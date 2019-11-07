@@ -68,7 +68,7 @@
             this.quaylai.Name = "quaylai";
             this.quaylai.Size = new System.Drawing.Size(121, 32);
             this.quaylai.TabIndex = 32;
-            this.quaylai.Text = "Quay Lại";
+            this.quaylai.Text = "Thoát";
             this.quaylai.UseVisualStyleBackColor = true;
             this.quaylai.Click += new System.EventHandler(this.quaylai_Click);
             // 

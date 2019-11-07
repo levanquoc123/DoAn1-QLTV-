@@ -97,7 +97,7 @@ namespace quản_lý_thư_viện
         private void button2_Click(object sender, EventArgs e)
         {
             DialogResult traloi;
-            traloi = MessageBox.Show("Bạn Thực Sự Muốn Thoát?", "EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            traloi = MessageBox.Show("Bạn Thực Sự Muốn Tho?", "EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (traloi == DialogResult.Yes)
                 //Application.Exit();
                 this.Close();

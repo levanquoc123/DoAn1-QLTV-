@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.chaychu = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,6 +50,19 @@
             this.dataGridView1.Size = new System.Drawing.Size(353, 150);
             this.dataGridView1.TabIndex = 32;
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "sothutu";
+            this.Column1.HeaderText = "STT";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "yeucau";
+            this.Column2.HeaderText = "Tin hỗ trợ";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 200;
+            // 
             // timer1
             // 
             this.timer1.Interval = 10;
@@ -61,7 +74,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(122, 41);
             this.button2.TabIndex = 35;
-            this.button2.Text = "Quay Lại";
+            this.button2.Text = "Thoát";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -87,19 +100,6 @@
             this.chaychu.Size = new System.Drawing.Size(94, 29);
             this.chaychu.TabIndex = 33;
             this.chaychu.Text = "Hỗ Trợ";
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "sothutu";
-            this.Column1.HeaderText = "STT";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "yeucau";
-            this.Column2.HeaderText = "Tin hỗ trợ";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 200;
             // 
             // hotro
             // 
