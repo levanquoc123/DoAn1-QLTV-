@@ -46,17 +46,16 @@ namespace quản_lý_thư_viện
         {
             try
             {
+                dangnhap dn = new dangnhap();
+                hienthitendangnhap.Text = dangnhap.tenhienthi;
 
                 dtdocgia = new DataTable();
                 dtdocgia.Clear();
-                //DataSet ds1 = dbQLTG.LayTacGia();
                 DataSet ds1 = blDG.LayDocGiatheotendangnhap(hienthitendangnhap.Text);
                dtdocgia = ds1.Tables[0];
                 // Đưa dữ liệu lên DataGridView       
                 dataGridView4.DataSource = dtdocgia;
-               // laymadocgia.Text = this.dataGridView4.CurrentRow.Cells[0].Value.ToString();
-
-
+                laymadocgia.Text = this.dataGridView4.CurrentRow.Cells[0].Value.ToString();
             }
 
             catch (SqlException)
@@ -239,7 +238,7 @@ namespace quản_lý_thư_viện
             t = Convert.ToInt32(laysoluong.Text);
             if (t <= 0)
             {
-                MessageBox.Show("ko dc muon!");
+                MessageBox.Show("Không còn sách!");
             }
             else
             {
