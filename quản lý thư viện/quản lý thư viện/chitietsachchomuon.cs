@@ -78,14 +78,7 @@ namespace quản_lý_thư_viện
                 MessageBox.Show("Không lấy được nội dung trong table NguoiDung. Lỗi rồi!!!");
             }
         }
-        int tongtien;
-        string dg = "VNĐ";
-        public void tinhtien()
-        {
-            int k = Convert.ToInt32(hienthitienno.Text);
-            tongtien = k * 1000;
-            tienno.Text = Convert.ToString(tongtien) + dg;
-        }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             chaychu.Location = new Point(chaychu.Location.X + 1, chaychu.Location.Y);
@@ -107,7 +100,6 @@ namespace quản_lý_thư_viện
             int r = dataGridView1.CurrentCell.RowIndex;
             // Chuyển thông tin lên panel         
             hienthitienno.Text = dataGridView1.Rows[r].Cells[8].Value.ToString();
-            tinhtien(); 
         }
 
         private void hienthimadocgia_Click(object sender, EventArgs e)
