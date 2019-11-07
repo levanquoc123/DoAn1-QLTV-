@@ -115,6 +115,7 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.label16 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -566,7 +567,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(59, 310);
+            this.button1.Location = new System.Drawing.Point(59, 357);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 78;
@@ -652,7 +653,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(258, 310);
+            this.button2.Location = new System.Drawing.Point(258, 357);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 79;
@@ -838,7 +839,7 @@
             this.Column12,
             this.Column13,
             this.Column5});
-            this.dataGridView2.Location = new System.Drawing.Point(25, 164);
+            this.dataGridView2.Location = new System.Drawing.Point(25, 211);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(882, 126);
             this.dataGridView2.TabIndex = 71;
@@ -852,11 +853,22 @@
             this.reportViewer1.Size = new System.Drawing.Size(396, 246);
             this.reportViewer1.TabIndex = 0;
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(27, 178);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(116, 24);
+            this.label16.TabIndex = 88;
+            this.label16.Text = "Sách mượn";
+            // 
             // muonsach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(989, 341);
+            this.ClientSize = new System.Drawing.Size(989, 437);
+            this.Controls.Add(this.label16);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.ngayhethong);
@@ -981,5 +993,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridView dataGridView2;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.Label label16;
     }
 }

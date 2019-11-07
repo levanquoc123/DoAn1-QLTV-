@@ -337,7 +337,7 @@ namespace quản_lý_thư_viện
                 LoadData4();
                 LoadData5();
                 LoadData6();
-                MessageBox.Show("XOA THANH CONG!");
+                MessageBox.Show("TRẢ THANH CONG!");
             }
             catch
             {

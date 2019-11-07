@@ -201,7 +201,6 @@
     <EmbeddedResource Include="quanlyuser.resx">
       <DependentUpon>quanlyuser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report3.rdlc" />
     <EmbeddedResource Include="taotaikhoanuser.resx">
       <DependentUpon>taotaikhoanuser.cs</DependentUpon>
     </EmbeddedResource>
