@@ -64,9 +64,6 @@ namespace quản_lý_thư_viện
         {
             try
             {
-
-
-
                 dtquanlynxb = new DataTable();
                 dtquanlynxb.Clear();
                 DataSet ds1 = dbQLNXB.LayMaNXBCuaTableNXB(this.xemmanxb.Text);

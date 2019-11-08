@@ -37,9 +37,6 @@ namespace quản_lý_thư_viện
                 // Đưa dữ liệu lên DataGridView       
 
                 textBox2.Text = tangmatudong();
-
-
-
             }
 
             catch (SqlException)
