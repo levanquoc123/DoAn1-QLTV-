@@ -213,7 +213,6 @@
     <EmbeddedResource Include="yeucauhotro.resx">
       <DependentUpon>yeucauhotro.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
