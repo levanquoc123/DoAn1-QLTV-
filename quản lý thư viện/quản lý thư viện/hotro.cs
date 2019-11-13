@@ -48,10 +48,6 @@ namespace quản_lý_thư_viện
                 dthotro = ds.Tables[0];
                 // Đưa dữ liệu lên DataGridView       
                 dataGridView1.DataSource = dthotro;
-
-
-
-
             }
 
             catch (SqlException)

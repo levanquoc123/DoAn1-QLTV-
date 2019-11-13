@@ -85,7 +85,7 @@ namespace quản_lý_thư_viện
                 string strHoaDon = dataGridView1.Rows[r].Cells[0].Value.ToString();
                 DialogResult traloi;
                 // Hiện hộp thoại hỏi đáp              
-                traloi = MessageBox.Show("Chắc xóa mẫu tin này không?", "Trả lời", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                traloi = MessageBox.Show("Chắc xóa không?", "Trả lời", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 // Kiểm tra có nhắp chọn nút Ok không?      
                 if (traloi == DialogResult.Yes)
                 {
@@ -100,7 +100,7 @@ namespace quản_lý_thư_viện
                 else
                 {
                     // Thông báo         
-                    MessageBox.Show("Không thực hiện việc xóa mẫu tin!");
+                    MessageBox.Show("Không thực hiện việc xóa!");
                 }
             }
             catch (SqlException)

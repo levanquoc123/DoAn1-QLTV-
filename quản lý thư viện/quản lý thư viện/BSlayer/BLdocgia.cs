@@ -21,17 +21,17 @@ namespace quản_lý_thư_viện.BSlayer
 
             return db.ExecuteQueryDataSet("select * from docgia", CommandType.Text);
         }
-        public bool ThemTacGia(string masach, string tentacgia, ref string err)
-        {
-            string sqlString = "Insert Into tacgia Values(" + "'" + masach + "',N'" + tentacgia + "')";
-            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
-        }
-        public bool XoaTacGia(ref string err, string masach)
-        {
-            string sqlString = "Delete From tacgia Where masach='" + masach + "'";
-            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
-        }
-        public bool CapNhatTacGia(string madg, string tendg, string diachi, string sdt, string tendn, ref string err)
+        //public bool ThemTacGia(string masach, string tentacgia, ref string err)
+        //{
+        //    string sqlString = "Insert Into tacgia Values(" + "'" + masach + "',N'" + tentacgia + "')";
+        //    return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
+        //}
+        //public bool XoaTacGia(ref string err, string masach)
+        //{
+        //    string sqlString = "Delete From tacgia Where masach='" + masach + "'";
+        //    return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
+        //}
+        public bool CapNhatDocGia(string madg, string tendg, string diachi, string sdt, string tendn, ref string err)
         {
             string sqlString = "Update docgia Set tendangnhap='" + tendn + "',tendocgia=N'" + tendg + "',diachi=N'" + diachi + "',sdt='" + sdt + "'Where madocgia='" + madg + "'";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);

@@ -53,7 +53,7 @@ namespace quản_lý_thư_viện
                 }
             }
         }     
-        private void Form1_Load(object sender, EventArgs e)
+            private void Form1_Load(object sender, EventArgs e)
         {
             this.label11.Hide();
             this.xuathienten.Hide();

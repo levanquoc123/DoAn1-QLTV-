@@ -15,7 +15,7 @@ namespace quản_lý_thư_viện
     public partial class themsach : Form
     {
         DataTable qlsach = null;         // Khai báo biến kiểm tra việc Thêm hay Sửa dữ liệu  
-        bool Them;
+        //bool Them;
         string err;
         BLquanlysach dbQLS = new BLquanlysach();
         BLtacgia dbQLTG = new BLtacgia();

@@ -156,7 +156,8 @@ namespace quản_lý_thư_viện
         {
             DateTime d2 = Convert.ToDateTime(ngayhethong.Text);
             DateTime d1 = Convert.ToDateTime(ngaytra.Text);
-            TimeSpan t = d2.Subtract(d1);
+
+            TimeSpan t = d1.Subtract(d2);
             int day = t.Days;
             //Convert.ToString(day);
             songayquahan.Text = day.ToString();
@@ -259,7 +260,6 @@ namespace quản_lý_thư_viện
 
         private void button5_Click_1(object sender, EventArgs e)
         {
-            this.reportViewer1.Hide();
              DialogResult traloi;
                 traloi = MessageBox.Show("Bạn Thực Sự Muốn Thoát?", "EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (traloi == DialogResult.Yes)
@@ -288,13 +288,6 @@ namespace quản_lý_thư_viện
                 MessageBox.Show("Không lấy được nội dung trong table NguoiDung. Lỗi rồi!!!");
             }
         }
-        private void button4_Click_1(object sender, EventArgs e)
-        {
-            this.reportViewer1.Show();
-            //this.muonsachTableAdapter.Fill(this.DataSet1.muonsach, laymadocgia.Text);
-            this.reportViewer1.RefreshReport();
-        }
-
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int r = dataGridView1.CurrentCell.RowIndex;
@@ -343,10 +336,33 @@ namespace quản_lý_thư_viện
                 MessageBox.Show("ERROR");
             }
         }
+     
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click_1(object sender, EventArgs e)
         {
+           
 
+                BLmuonsach dbms1 = new BLmuonsach();
+                int c = dataGridView2.RowCount;
+             
+                for (int i = 0; i < c; i++)
+                {
+                    DateTime d2 = Convert.ToDateTime(this.dataGridView2.Rows[i].Cells[7].Value);
+                    DateTime d1 = Convert.ToDateTime(this.ngayhethong.Text);
+
+                    TimeSpan t = d2.Subtract(d1);
+                    int day = t.Days;
+                    //Convert.ToString(day);
+                    string stt = dataGridView2.Rows[i].Cells[0].Value.ToString();
+
+                    this.dataGridView2.Rows[i].Cells[8].Value = day.ToString();
+                   // dbms1.CapNhatSoNgayTraSach(day, stt, ref err);
+                }
+
+           
+           // LoadData4();
+
+           
         }
 
         

@@ -40,6 +40,11 @@ namespace quản_lý_thư_viện.BSlayer
             string sqlString = "Update muonsach Set madocgia='" + madocgia + "',tensach=N'" + tensach + "',tentacgia=N'" + tentacgia + "',soluong='" + soluong + "',ngaymuon='" + ngaymuon + "',ngaytra='" + ngaytra + "',songayquahan='" + songay + "',sothutu='" + stt + "'Where masach='" + masach + "'";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
+        public bool CapNhatSoNgayTraSach(int songayphaitra, string stt, ref string err)
+        {
+            string sqlString = "Update muonsach Set songayquahan='" + songayphaitra + "'Where sothutu='" + stt + "'";
+            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
+        }
         public bool LayMS(string mdg)
         {
             string sqlString = "select * from muonsach where masach = '" + mdg + "'";

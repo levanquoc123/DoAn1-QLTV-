@@ -18,7 +18,7 @@ namespace quản_lý_thư_viện
         DataTable qldocgia = null;
         BLquanlydocgia BLQLDG = new BLquanlydocgia();
 
-        DataTable dtTaotaikhoan = null;         // Khai báo biến kiểm tra việc Thêm hay Sửa dữ liệu  
+        //DataTable dtTaotaikhoan = null;         // Khai báo biến kiểm tra việc Thêm hay Sửa dữ liệu  
         bool Them;
         string err;
         BLtaotaikhoanuser dbTTKUser = new BLtaotaikhoanuser();

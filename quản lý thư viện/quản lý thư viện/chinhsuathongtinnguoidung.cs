@@ -62,7 +62,7 @@ namespace quản_lý_thư_viện
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            dbDG.CapNhatTacGia(this.dataGridView1.CurrentRow.Cells[0].Value.ToString(), coitendocgia.Text, coidiachi.Text, coisdt.Text, this.dataGridView1.CurrentRow.Cells[1].Value.ToString(), ref err);
+            dbDG.CapNhatDocGia(this.dataGridView1.CurrentRow.Cells[0].Value.ToString(), coitendocgia.Text, coidiachi.Text, coisdt.Text, this.dataGridView1.CurrentRow.Cells[1].Value.ToString(), ref err);
             LoadData2();
         }
 

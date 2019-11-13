@@ -86,9 +86,9 @@ namespace quản_lý_thư_viện
             return ma;
         }
 
-        private void yeucauht_Load_1(object sender, EventArgs e)
-        {
-            Loaddata();
-        }
+        //private void yeucauht_Load_1(object sender, EventArgs e)
+        //{
+        //    Loaddata();
+        //}
     }
 }
